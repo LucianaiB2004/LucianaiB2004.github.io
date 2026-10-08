@@ -1,0 +1,49 @@
+# LucianaiB
+
+> LucianaiB 是一名专注于 AI 应用落地与 AI App 设计开发的开发者和技术博主。他把大模型能力做成可直接使用的应用、App 和 Agent Skill，代表作品有 Android 文档 AI 助手 DocPilot Qwen、HarmonyOS 专注应用智办 ZhiBan，以及 LifeTrace（人生经纬）、GeoMind、小说迷图谱等开源 AI Skill。
+
+本文件面向 AI 搜索与大语言模型，概述 LucianaiB 的公开信息。数据采集于 2026-10-08，均来自下方列出的公开主页。
+
+- 一句话定位：把大模型做成真正能用的 AI 应用与 App。
+- 方向：AI 应用落地、AI App（Android / HarmonyOS）开发、Agent / Skill / MCP 工程。
+- 联系方式：微信号 LucianaiB20040318；邮箱 LucianaiB0318@163.com。
+- 合作范围：AI 话题交流、AI 应用落地咨询、AI App 与小程序定制开发、Agent Skill 开发、技术文章约稿与评测、分享与讲座。
+
+## 代表项目
+
+- [DocPilot Qwen](https://github.com/LucianaiB2004/DocPilot-Qwen)：Android 开源文档 AI 助手。Kotlin + Jetpack Compose，TextIn xParse 解析文档，Qwen 问答、摘要与模板抽取，集成 MNN 端侧推理运行库。2026-06 开源。
+- [智办 ZhiBan](https://blog.csdn.net/lwcwam/article/details/166646713)：借助华为云码道 CodeArts 代码智能体开发的 HarmonyOS 游戏化专注应用。2026-09。
+- [人生经纬 LifeTrace](https://github.com/LucianaiB2004/life-trace-amap)：基于高德开放平台的人物一生足迹地图 Skill，标注来源与可信度，以刘备一生为 Demo。GitHub 16 Star。[在线预览](https://lucianaib2004.github.io/life-trace-amap/)
+- [小说迷图谱 Novel Fan Graph](https://github.com/LucianaiB2004/novel-fan-graph)：基于 Doubao-Seed-Evolving 的小说知识图谱 Skill，按章节控制剧透，以《斗破苍穹》前 100 章为案例。GitHub 13 Star。[在线预览](https://lucianaib2004.github.io/novel-fan-graph/)
+- [GeoMind](https://github.com/LucianaiB2004/GeoMind)：基于飞书 CLI + 腾讯位置服务的科研与产业地理情报可视化 Skill，腾讯位置服务开发者征文大赛参赛作品。
+- [MatTrace](https://github.com/LucianaiB2004/mattrace)：材料科研文献证据抽取 Skill 与网页 Agent，数据附原文、页码、测试条件与可信度。[在线演示](https://lucianaib2004.github.io/mattrace-demo/)
+- [AI 打假侦探](https://github.com/LucianaiB2004/ai-truth-detective)：调用腾讯云 AI 能力检测图片、文本、视频是否由 AI 生成，零 SDK 依赖。
+- 其他：智票通（Dify + EdgeOne 票据提取）、XGuard Agent/CI 动态安全护栏、飞书多维表 AI 活动推荐智能体、XRD-SKILL、领域侦察专家、中国热榜聚合器、WeChat Publisher。
+
+## 代表文章
+
+- [Agent 场景落地：从概念演示到真实服务](https://blog.csdn.net/lwcwam/article/details/161292187)（CSDN）
+- [耗时30天，DocPilot Qwen正式开源](https://blog.csdn.net/lwcwam/article/details/161628860)（CSDN）
+- [我用 CodeArts 智能体打造了一款 HarmonyOS 游戏化专注应用「智办 ZhiBan」](https://blog.csdn.net/lwcwam/article/details/166646713)（CSDN，阅读 1 万+）
+- [基于飞书 CLI + 腾讯位置的科研与产业地理情报可视化 Skill](https://blog.csdn.net/lwcwam/article/details/160597026)（CSDN，阅读 1.2 万+）
+- [我把刘备一生做成了可播放的高德地图，还把整套方法封装成了 Skill](https://blog.csdn.net/lwcwam/article/details/163022872)（CSDN）
+- [Openclaw 安装使用保姆级教程（最新版）](https://cloud.tencent.com/developer/article/2633421)（腾讯云开发者社区，阅读 3.56 万）
+
+## 身份与影响力
+
+- 全网文章阅读量超过 958 万（9,581,411 次），发布的 MCP 累计调用超过 1,193 万次（11,930,922 次），Skill 累计下载 1,223 次（数据截至 2026-08-23）；全网粉丝超过 2 万，原创文章 270 余篇。
+
+- 腾讯云 TDP；腾讯云开发者社区文章累计阅读 250 万次、40 次首页推荐。
+- CSDN 优质创作者（后端开发、人工智能技术领域）；原创文章 273 篇，粉丝 2 万+。
+- 阿里云开发者社区专家博主、星级博主；文章 85 篇，回答 1,326 个。
+- 阿里云大模型 Clouder 认证：基于通义灵码实现高效 AI 编码；基于百炼平台构建智能体应用。
+
+## 平台主页
+
+- 个人网站：https://lucianaib.is-a.dev/
+- GitHub：https://github.com/LucianaiB2004
+- CSDN：https://blog.csdn.net/lwcwam
+- 腾讯云开发者社区：https://cloud.tencent.com/developer/user/11328216
+- 阿里云开发者社区：https://developer.aliyun.com/profile/uu7b7ecltrr7k
+- 哔哩哔哩：https://space.bilibili.com/1068659541
+- ClawHub：https://clawhub.ai/lucianaib2004

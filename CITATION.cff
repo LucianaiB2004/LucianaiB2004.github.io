@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "如引用本网站或其中的资料，请注明作者 LucianaiB。"
+title: "LucianaiB 个人主页"
+type: software
+authors:
+  - alias: "LucianaiB"
+    email: "LucianaiB0318@163.com"
+    website: "https://lucianaib.is-a.dev"
+url: "https://lucianaib.is-a.dev"
+repository-code: "https://github.com/LucianaiB2004/lucianaib-site"
+abstract: "LucianaiB 是一名专注于 AI 应用落地与 AI App 设计开发的开发者和技术博主。本仓库是其个人主页源码，包含项目案例、文章与联系方式。"
+keywords:
+  - LucianaiB
+  - AI 应用落地
+  - AI App
+  - Agent
+  - MCP
+  - AI Skill
+license: MIT

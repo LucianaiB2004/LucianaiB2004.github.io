@@ -1,0 +1,30 @@
+# LucianaiB 个人网站
+# 欢迎搜索引擎与 AI 爬虫读取本站公开内容
+User-agent: *
+Allow: /
+
+# 常见 AI 搜索/训练爬虫：明确允许
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: Sogou web spider
+Allow: /
+User-agent: YisouSpider
+Allow: /
+
+Sitemap: https://lucianaib.is-a.dev/sitemap.xml

@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LucianaiB｜AI 应用落地与 AI App 开发者</title>
+<meta name="description" content="LucianaiB 是一名专注 AI 应用落地与 AI App 设计开发的开发者和技术博主，代表作品有 Android 文档 AI 助手 DocPilot Qwen、HarmonyOS 专注应用智办 ZhiBan，以及 LifeTrace、GeoMind、小说迷图谱等 AI Skill。欢迎加微信 LucianaiB20040318 交流 AI。">
+<meta name="keywords" content="LucianaiB,AI应用落地,AI App开发,大模型应用,智能体,Agent,AI Skill,MCP,AI开发者,DocPilot Qwen,LifeTrace,GeoMind,HarmonyOS,Android AI应用">
+<meta name="author" content="LucianaiB">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://lucianaib.is-a.dev/">
+<meta name="theme-color" content="#f4f6fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1120" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/avatar.jpg">
+<link rel="alternate" type="text/markdown" title="llms.txt" href="https://lucianaib.is-a.dev/llms.txt">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="LucianaiB">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="LucianaiB｜AI 应用落地与 AI App 开发者">
+<meta property="og:description" content="把大模型做成真正能用的 AI 应用与 App。代表作品：DocPilot Qwen、智办 ZhiBan、LifeTrace、GeoMind。">
+<meta property="og:url" content="https://lucianaib.is-a.dev/">
+<meta property="og:image" content="https://lucianaib.is-a.dev/assets/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LucianaiB：AI 应用落地与 AI App 开发者">
+<meta property="profile:username" content="LucianaiB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LucianaiB｜AI 应用落地与 AI App 开发者">
+<meta name="twitter:description" content="把大模型做成真正能用的 AI 应用与 App。代表作品：DocPilot Qwen、智办 ZhiBan、LifeTrace、GeoMind。">
+<meta name="twitter:image" content="https://lucianaib.is-a.dev/assets/img/og-cover.png">
+
+<script>
+  (function () { try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+</script>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://lucianaib.is-a.dev/#website",
+      "url": "https://lucianaib.is-a.dev/",
+      "name": "LucianaiB",
+      "inLanguage": "zh-CN",
+      "publisher": { "@id": "https://lucianaib.is-a.dev/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://lucianaib.is-a.dev/#profile",
+      "url": "https://lucianaib.is-a.dev/",
+      "name": "LucianaiB｜AI 应用落地与 AI App 开发者",
+      "inLanguage": "zh-CN",
+      "isPartOf": { "@id": "https://lucianaib.is-a.dev/#website" },
+      "mainEntity": { "@id": "https://lucianaib.is-a.dev/#person" },
+      "dateModified": "2026-10-08"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://lucianaib.is-a.dev/#person",
+      "name": "LucianaiB",
+      "alternateName": ["LucianaiB2004", "lwcwam"],
+      "url": "https://lucianaib.is-a.dev/",
+      "image": "https://lucianaib.is-a.dev/assets/img/avatar.jpg",
+      "jobTitle": "AI 应用落地与 AI App 开发者、技术博主",
+      "description": "LucianaiB 是一名专注于 AI 应用落地与 AI App 设计开发的开发者和技术博主，代表作品有 Android 文档 AI 助手 DocPilot Qwen、HarmonyOS 专注应用智办 ZhiBan，以及 LifeTrace（人生经纬）、GeoMind、小说迷图谱、MatTrace 等开源 AI Skill。",
+      "email": "mailto:LucianaiB0318@163.com",
+      "knowsAbout": ["AI 应用落地", "AI App 开发", "大模型应用", "智能体（Agent）", "AI Skill", "MCP（Model Context Protocol）", "Android 应用开发", "HarmonyOS 应用开发", "Dify", "RAG 与文档解析", "AI 内容安全与 AIGC 检测", "Python", "Kotlin", "TypeScript"],
+      "award": ["CSDN 优质创作者（后端开发、人工智能技术领域）", "阿里云开发者社区专家博主", "阿里云开发者社区星级博主", "腾讯云 TDP"],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "name": "阿里云大模型 Clouder 认证：基于通义灵码实现高效 AI 编码", "recognizedBy": { "@type": "Organization", "name": "阿里云" } },
+        { "@type": "EducationalOccupationalCredential", "name": "阿里云大模型 Clouder 认证：基于百炼平台构建智能体应用", "recognizedBy": { "@type": "Organization", "name": "阿里云" } }
+      ],
+      "sameAs": [
+        "https://github.com/LucianaiB2004",
+        "https://blog.csdn.net/lwcwam",
+        "https://cloud.tencent.com/developer/user/11328216",
+        "https://developer.aliyun.com/profile/uu7b7ecltrr7k",
+        "https://space.bilibili.com/1068659541",
+        "https://clawhub.ai/lucianaib2004"
+      ],
+      "contactPoint": { "@type": "ContactPoint", "contactType": "AI 交流与合作", "description": "微信号：LucianaiB20040318", "availableLanguage": ["zh-CN"] }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://lucianaib.is-a.dev/#projects",
+      "name": "LucianaiB 的代表项目",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "DocPilot Qwen", "applicationCategory": "ProductivityApplication", "operatingSystem": "Android", "description": "面向 Android 的开源文档 AI 助手，整合 TextIn xParse 文档解析、Qwen 问答、摘要生成与模板抽取。", "url": "https://github.com/LucianaiB2004/DocPilot-Qwen", "image": "https://lucianaib.is-a.dev/assets/img/projects/docpilot-cover.webp", "author": { "@id": "https://lucianaib.is-a.dev/#person" }, "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "智办 ZhiBan", "applicationCategory": "ProductivityApplication", "operatingSystem": "HarmonyOS", "description": "使用华为云码道 CodeArts 代码智能体开发的 HarmonyOS 游戏化专注应用。", "url": "https://blog.csdn.net/lwcwam/article/details/166646713", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareSourceCode", "name": "人生经纬 LifeTrace", "programmingLanguage": "JavaScript", "description": "基于高德开放平台的人物一生足迹地图 Skill，在真实地图上播放带来源与可信度的人生路线。", "codeRepository": "https://github.com/LucianaiB2004/life-trace-amap", "url": "https://lucianaib2004.github.io/life-trace-amap/", "license": "https://opensource.org/licenses/MIT", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareSourceCode", "name": "小说迷图谱 Novel Fan Graph", "programmingLanguage": "Python", "description": "基于 Doubao-Seed-Evolving 的小说知识图谱 Skill，生成人物关系、场景地图、势力图谱与事件时间线，并按章节控制剧透。", "codeRepository": "https://github.com/LucianaiB2004/novel-fan-graph", "url": "https://lucianaib2004.github.io/novel-fan-graph/", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareSourceCode", "name": "GeoMind", "programmingLanguage": "TypeScript", "description": "基于飞书 CLI 与腾讯位置服务的科研与产业地理情报可视化 Skill。", "codeRepository": "https://github.com/LucianaiB2004/GeoMind", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "SoftwareSourceCode", "name": "MatTrace", "programmingLanguage": "TypeScript", "description": "材料科研的文献证据抽取 Skill，输出带原文、页码、测试条件与可信度的结构化材料数据。", "codeRepository": "https://github.com/LucianaiB2004/mattrace", "url": "https://lucianaib2004.github.io/mattrace-demo/", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "SoftwareSourceCode", "name": "AI 打假侦探 ai-truth-detective", "programmingLanguage": "Python", "description": "调用腾讯云 AI 生成识别能力检测图片、文本、视频是否由 AI 生成，并输出结构化验真报告。", "codeRepository": "https://github.com/LucianaiB2004/ai-truth-detective", "license": "https://opensource.org/licenses/MIT", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://lucianaib.is-a.dev/#articles",
+      "name": "LucianaiB 精选文章",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "Article", "headline": "华为云码道 AI 编程实战：我用 CodeArts 智能体打造了一款 HarmonyOS 游戏化专注应用「智办 ZhiBan」", "datePublished": "2026-09-25", "url": "https://blog.csdn.net/lwcwam/article/details/166646713", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "Article", "headline": "耗时30天，DocPilot Qwen正式开源：一个免费无广的开源文档 AI 助手", "datePublished": "2026-06-02", "url": "https://blog.csdn.net/lwcwam/article/details/161628860", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "Article", "headline": "Agent 场景落地：从概念演示到真实服务", "datePublished": "2026-05-21", "url": "https://blog.csdn.net/lwcwam/article/details/161292187", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "Article", "headline": "我把刘备一生做成了可播放的高德地图，还把整套方法封装成了 Skill", "datePublished": "2026-07-19", "url": "https://blog.csdn.net/lwcwam/article/details/163022872", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "Article", "headline": "【腾讯位置服务开发者征文大赛】基于飞书 CLI + 腾讯位置的科研与产业地理情报可视化 Skill", "datePublished": "2026-04-29", "url": "https://blog.csdn.net/lwcwam/article/details/160597026", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "Article", "headline": "Openclaw 安装使用保姆级教程（最新版）", "datePublished": "2026-03-03", "url": "https://cloud.tencent.com/developer/article/2633421", "author": { "@id": "https://lucianaib.is-a.dev/#person" } } }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lucianaib.is-a.dev/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "LucianaiB 是谁？", "acceptedAnswer": { "@type": "Answer", "text": "LucianaiB 是一名专注于 AI 应用落地与 AI App 设计开发的开发者和技术博主。他把大模型能力做成可以直接使用的应用、App 和 Agent Skill，代表作品有 Android 文档 AI 助手 DocPilot Qwen、HarmonyOS 专注应用智办 ZhiBan、高德地图人生足迹 Skill LifeTrace 和产业地理情报 Skill GeoMind。" } },
+        { "@type": "Question", "name": "LucianaiB 擅长哪些技术？", "acceptedAnswer": { "@type": "Answer", "text": "LucianaiB 擅长大模型应用开发与智能体（Agent / Skill / MCP）工程，熟悉 Qwen、豆包 Seed 等模型 API 接入、TextIn 文档解析、Dify 工作流；App 方向使用 Kotlin + Jetpack Compose 开发 Android 应用，并开发 HarmonyOS 应用；常用 Python、TypeScript / Node.js，以及高德、腾讯位置服务、飞书 CLI、腾讯云 AI 能力等开放平台。" } },
+        { "@type": "Question", "name": "LucianaiB 做过哪些 AI 应用和 App？", "acceptedAnswer": { "@type": "Answer", "text": "LucianaiB 的 AI App 包括 Android 开源文档 AI 助手 DocPilot Qwen、HarmonyOS 游戏化专注应用智办 ZhiBan、HarmonyOS 月夜明信片「追月」和国庆头像框；AI 应用与 Skill 包括 LifeTrace 人生经纬、GeoMind、小说迷图谱、MatTrace 材料证据追踪、AI 打假侦探、基于 Dify 与 EdgeOne 的票据提取应用智票通，以及基于 XGuard 的 Agent/CI 动态安全护栏。" } },
+        { "@type": "Question", "name": "LucianaiB 在哪些平台发布内容？", "acceptedAnswer": { "@type": "Answer", "text": "LucianaiB 主要在 CSDN（blog.csdn.net/lwcwam）、腾讯云开发者社区、阿里云开发者社区、掘金和 B 站发布 AI 应用实战文章与视频，开源项目发布在 GitHub（github.com/LucianaiB2004）。截至 2026 年 8 月，LucianaiB 全网文章阅读量超过 958 万、粉丝超过 2 万、原创文章 270 余篇，发布的 MCP 累计调用超过 1,193 万次，Skill 累计下载 1,223 次。" } },
+        { "@type": "Question", "name": "如何联系 LucianaiB 交流 AI 或合作？", "acceptedAnswer": { "@type": "Answer", "text": "添加 LucianaiB 的微信 LucianaiB20040318，备注来意即可。欢迎交流 AI 应用、Agent 与 AI App 话题，也可以洽谈 AI 应用落地咨询、AI App / 小程序定制开发、技术文章约稿和分享讲座。" } },
+        { "@type": "Question", "name": "LucianaiB 的开源项目可以免费使用吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以。LucianaiB 在 GitHub 上的 LifeTrace、AI 打假侦探、XRD-SKILL、WeChat Publisher 等项目采用 MIT 协议开源，DocPilot Qwen 也完全开源，使用时保留原始版权与许可声明即可。" } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- 图标库：全部为本站原创线性图标 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.6L12 15l-1.8-4.4L5.5 9l4.7-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+    <symbol id="i-nodes" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5"/></symbol>
+    <symbol id="i-graph" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2"/><circle cx="12" cy="5" r="2.2"/><circle cx="19" cy="12" r="2.2"/><circle cx="12" cy="19" r="2.2"/><path d="M6.6 10.4l3.8-3.8M13.6 6.6l3.8 3.8M17.4 13.6l-3.8 3.8M10.4 17.4l-3.8-3.8"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.6-4.6M8.5 11l1.8 1.8 3.2-3.3"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 8.5a4.8 4.8 0 0 1-.5 9.5z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></symbol>
+    <symbol id="i-present" viewBox="0 0 24 24"><path d="M3 4h18M5 4v10h14V4M12 14v4M8 21l4-3 4 3"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 13.9c1.8.9 3 2.9 3 6.1"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4L7 21l5-2.8 5 2.8-1.6-7.6"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2.3"/><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="7" r="2.3"/><path d="M6 7.3v9.4M18 9.3c0 4.2-3.5 5.7-9.8 7.5"/></symbol>
+    <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15H4.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2.5z"/><path d="M8 7h8M8 11h6"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M9 15l-3-3c1.5-5 6-9 13-9 0 7-4 11.5-10 12z"/><circle cx="15" cy="9" r="1.6"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2.5V6M15 2.5V6M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7 9l3 3-3 3M13 15h4"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.2v5.6l4.8-2.8z"/></symbol>
+    <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M10 4a2 2 0 1 1 4 0v2h4v4h-1.5a2 2 0 1 0 0 4H18v4h-4v-1.5a2 2 0 1 0-4 0V20H6v-4h1.5a2 2 0 1 0 0-4H6V6h4z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3a2.6 2.6 0 1 1 3.6 2.4c-.7.3-1.1.9-1.1 1.7v.3M12 17h.01"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.8 6.8 0 0 0 9.7 9.7z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2.5L4.5 14H11l-1 7.5L19.5 10H13z"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-moonpost" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M15.5 8.5a3 3 0 1 0 1.5 5 2.5 2.5 0 0 1-1.5-5zM6 15h6"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5.5 9.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7.5 15h9"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 21a6.5 6.5 0 0 0 6.5-6.5c0-4-3-6-3.5-9.5-2.5 1.5-4 4-4 6.5-1-1-1.5-2.3-1.5-3.5C7 10 5.5 12.5 5.5 14.5A6.5 6.5 0 0 0 12 21z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3L3 10.5l7 2.5 2.5 7z"/><path d="M10 13l4-4"/></symbol>
+    <symbol id="i-wechat" viewBox="0 0 24 24"><path d="M9.5 4C5.4 4 2 6.8 2 10.2c0 1.9 1.1 3.6 2.8 4.8L4.2 17l2.4-1.2c.9.3 1.9.4 2.9.4"/><path d="M15.5 9c3.6 0 6.5 2.4 6.5 5.3 0 1.6-.9 3-2.3 4l.5 1.7-2-1c-.8.2-1.7.4-2.7.4-3.6 0-6.5-2.4-6.5-5.1S11.9 9 15.5 9z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top" aria-label="LucianaiB 首页"><img src="assets/img/avatar-sm.webp" alt="" width="30" height="30"><span>LucianaiB</span></a>
+    <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航"><svg class="icon"><use href="#i-menu"/></svg></button>
+    <nav class="topnav" id="site-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#strengths"><svg class="icon"><use href="#i-zap"/></svg>优势</a></li>
+        <li><a href="#projects"><svg class="icon"><use href="#i-grid"/></svg>项目</a></li>
+        <li><a href="#skills"><svg class="icon"><use href="#i-layers"/></svg>技术栈</a></li>
+        <li><a href="#articles"><svg class="icon"><use href="#i-book"/></svg>文章</a></li>
+        <li><a href="#honors"><svg class="icon"><use href="#i-award"/></svg>荣誉</a></li>
+        <li><a href="#recent"><svg class="icon"><use href="#i-clock"/></svg>动态</a></li>
+        <li><a href="#cooperation"><svg class="icon"><use href="#i-brief"/></svg>合作</a></li>
+        <li><a href="#faq"><svg class="icon"><use href="#i-help"/></svg>问答</a></li>
+        <li><a href="#contact"><svg class="icon"><use href="#i-chat"/></svg>联系</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn theme-toggle" type="button" aria-label="切换深色/浅色模式"><svg class="icon sun"><use href="#i-sun"/></svg><svg class="icon moon"><use href="#i-moon"/></svg></button>
+  </div>
+</header>
+
+<div class="layout" id="top">
+
+  <!-- 左侧：个人档案卡 -->
+  <aside class="profile" aria-label="个人档案">
+    <div class="card profile-card">
+      <div class="profile-head">
+        <img class="avatar" src="assets/img/avatar.webp" alt="LucianaiB 的头像：戴红色棒球帽和白框墨镜的猿形象" width="92" height="92">
+        <h1>LucianaiB</h1>
+        <p class="role">AI 应用落地与 AI App 开发者<br>技术博主</p>
+        <p class="motto">总有人间一两风，填我十万八千梦。</p>
+        <span class="status"><i aria-hidden="true"></i>开放 AI 应用与 App 合作</span>
+      </div>
+      <ul class="chips" aria-label="核心标签">
+        <li class="chip route"><svg class="icon"><use href="#i-phone"/></svg>AI App</li>
+        <li class="chip cobalt"><svg class="icon"><use href="#i-spark"/></svg>AI 应用落地</li>
+        <li class="chip cobalt"><svg class="icon"><use href="#i-nodes"/></svg>Agent / Skill</li>
+        <li class="chip">Android</li>
+        <li class="chip">HarmonyOS</li>
+        <li class="chip">MCP</li>
+      </ul>
+      <div class="p-block">
+        <p class="p-label">社区身份</p>
+        <ul class="creds">
+          <li><span class="ic"><svg class="icon"><use href="#i-cloud"/></svg></span><span>腾讯云 TDP<small>文章累计阅读 250 万</small></span></li>
+          <li><span class="ic"><svg class="icon"><use href="#i-award"/></svg></span><span>阿里云专家博主<small>星级博主、Clouder 认证</small></span></li>
+          <li><span class="ic"><svg class="icon"><use href="#i-pen"/></svg></span><span>CSDN 优质创作者<small>人工智能、后端开发领域</small></span></li>
+        </ul>
+      </div>
+      <div class="p-block">
+        <p class="p-label">微信交流</p>
+        <div class="wx">
+          <span class="wx-id">LucianaiB20040318</span>
+          <button class="copy-mini" type="button" data-copy="LucianaiB20040318" aria-label="复制微信号"><svg class="icon"><use href="#i-copy"/></svg><span>复制</span></button>
+        </div>
+        <div class="p-actions">
+          <a class="btn btn-primary btn-sm" href="#contact"><svg class="icon"><use href="#i-wechat"/></svg>加微信</a>
+          <a class="btn btn-ghost btn-sm" href="#projects"><svg class="icon"><use href="#i-grid"/></svg>看项目</a>
+        </div>
+      </div>
+      <div class="p-block">
+        <p class="p-label">在这些平台找到我</p>
+        <div class="socials">
+          <a href="https://github.com/LucianaiB2004"><svg class="icon"><use href="#i-branch"/></svg>GitHub</a>
+          <a href="https://blog.csdn.net/lwcwam"><svg class="icon"><use href="#i-book"/></svg>CSDN</a>
+          <a href="https://cloud.tencent.com/developer/user/11328216"><svg class="icon"><use href="#i-cloud"/></svg>腾讯云</a>
+          <a href="https://developer.aliyun.com/profile/uu7b7ecltrr7k"><svg class="icon"><use href="#i-cloud"/></svg>阿里云</a>
+          <a href="https://space.bilibili.com/1068659541"><svg class="icon"><use href="#i-play"/></svg>B 站</a>
+          <a href="https://clawhub.ai/lucianaib2004"><svg class="icon"><use href="#i-puzzle"/></svg>ClawHub</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="content" id="main">
+
+    <!-- 开场 -->
+    <section class="panel intro" aria-labelledby="intro-title">
+      <div class="intro-grid">
+        <div>
+          <span class="kicker"><svg class="icon"><use href="#i-rocket"/></svg>已交付 4 款 App 与 10 个开源 AI Skill</span>
+          <h2 id="intro-title"><span class="ln">把大模型做成真正能用的</span><span class="ln">AI 应用与 App</span></h2>
+          <p class="lede">LucianaiB 是一名专注于 AI 应用落地与 AI App 设计开发的开发者和技术博主。代表作品有 Android 文档 AI 助手 DocPilot Qwen、HarmonyOS 专注应用「智办 ZhiBan」，以及 LifeTrace、GeoMind、小说迷图谱、MatTrace 等开源 AI Skill。</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact"><svg class="icon"><use href="#i-chat"/></svg>加微信聊 AI</a>
+            <a class="btn btn-ghost" href="#projects"><svg class="icon"><use href="#i-grid"/></svg>查看项目案例</a>
+          </div>
+        </div>
+        <figure class="map-card">
+          <div class="map-bar">
+            <b><span class="mb-ic"><svg class="icon"><use href="#i-route"/></svg></span>作品路线图<small>从模型能力到可用产品</small></b>
+            <span class="legend"><span><i class="m"></i>模型</span><span><i class="s"></i>Skill</span><span><i class="a"></i>App</span></span>
+          </div>
+          <svg class="route-map" viewBox="0 0 460 340" role="img" aria-labelledby="rm-t rm-d">
+            <title id="rm-t">LucianaiB 的作品路线图</title>
+            <desc id="rm-d">路线从 Qwen、豆包 Seed 等大模型和腾讯云 AI 能力出发，经过 LifeTrace、小说迷图谱、GeoMind 三个 AI Skill，抵达 DocPilot Qwen 与终点智办 ZhiBan 两款 App。</desc>
+            <defs>
+              <radialGradient id="rm-glow-a" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="var(--route)" stop-opacity=".16"/><stop offset="1" stop-color="var(--route)" stop-opacity="0"/></radialGradient>
+              <radialGradient id="rm-glow-s" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="var(--cobalt)" stop-opacity=".13"/><stop offset="1" stop-color="var(--cobalt)" stop-opacity="0"/></radialGradient>
+            </defs>
+            <!-- 地形：三片区域对应三个阶段 -->
+            <ellipse cx="140" cy="62" rx="150" ry="62" fill="url(#rm-glow-s)" opacity=".7"/>
+            <ellipse cx="250" cy="190" rx="210" ry="70" fill="url(#rm-glow-s)"/>
+            <ellipse cx="320" cy="290" rx="190" ry="70" fill="url(#rm-glow-a)"/>
+            <g class="contour"><path d="M300 20 C 360 10, 440 30, 446 70"/><path d="M318 30 C 366 24, 428 40, 432 70"/><path d="M14 150 C 30 120, 70 120, 90 140"/><path d="M14 166 C 34 140, 64 140, 80 154"/></g>
+            <!-- 道路 -->
+            <path id="rm-path" class="road-edge" d="M56 70 C 120 40, 180 38, 232 48 C 300 58, 384 60, 392 104 C 402 152, 320 172, 250 178 C 170 184, 70 170, 78 214 C 86 258, 140 284, 196 280 C 260 276, 330 246, 396 262"/>
+            <path class="road" d="M56 70 C 120 40, 180 38, 232 48 C 300 58, 384 60, 392 104 C 402 152, 320 172, 250 178 C 170 184, 70 170, 78 214 C 86 258, 140 284, 196 280 C 260 276, 330 246, 396 262"/>
+            <path class="path" d="M56 70 C 120 40, 180 38, 232 48 C 300 58, 384 60, 392 104 C 402 152, 320 172, 250 178 C 170 184, 70 170, 78 214 C 86 258, 140 284, 196 280 C 260 276, 330 246, 396 262"/>
+            <circle class="runner" r="5"><animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#rm-path"/></animateMotion></circle>
+
+            <!-- 站点 -->
+            <g class="stop model" transform="translate(56 70)"><circle class="halo" r="23"/><circle class="badge" r="17"/><use href="#i-spark" x="-10" y="-10" width="20" height="20"/></g>
+            <g class="stop model" transform="translate(232 48)"><circle class="halo" r="21"/><circle class="badge" r="15"/><use href="#i-cloud" x="-9" y="-9" width="18" height="18"/></g>
+            <g class="stop skill" transform="translate(392 104)"><circle class="halo" r="23"/><circle class="badge" r="17"/><use href="#i-map" x="-10" y="-10" width="20" height="20"/></g>
+            <g class="stop skill" transform="translate(250 178)"><circle class="halo" r="23"/><circle class="badge" r="17"/><use href="#i-graph" x="-10" y="-10" width="20" height="20"/></g>
+            <g class="stop skill" transform="translate(78 214)"><circle class="halo" r="23"/><circle class="badge" r="17"/><use href="#i-compass" x="-10" y="-10" width="20" height="20"/></g>
+            <g class="stop app" transform="translate(196 280)"><circle class="halo" r="23"/><circle class="badge" r="17"/><use href="#i-doc" x="-10" y="-10" width="20" height="20"/></g>
+            <g class="stop app finish" transform="translate(396 262)"><circle class="halo pulse" r="27"/><circle class="badge" r="20"/><use href="#i-phone" x="-11" y="-11" width="22" height="22"/><path class="flag" d="M0 -20 V -50 M0 -50 L 22 -43 L 0 -36"/></g>
+
+            <!-- 标签 -->
+            <g class="pill" transform="translate(24 96)"><rect width="134" height="38" rx="10"/><text class="t" x="11" y="16">Qwen、豆包 Seed</text><text class="s" x="11" y="29">大模型能力</text></g>
+            <g class="pill" transform="translate(256 8)"><rect width="110" height="36" rx="10"/><text class="t" x="11" y="16">腾讯云 AI</text><text class="s" x="11" y="29">识别与位置服务</text></g>
+            <g class="pill" transform="translate(300 128)"><rect width="122" height="36" rx="10"/><text class="t" x="11" y="16">LifeTrace</text><text class="s" x="11" y="29">16 Star 地图 Skill</text></g>
+            <g class="pill" transform="translate(166 122)"><rect width="106" height="36" rx="10"/><text class="t" x="11" y="16">小说迷图谱</text><text class="s" x="11" y="29">知识图谱 Skill</text></g>
+            <g class="pill" transform="translate(106 198)"><rect width="106" height="36" rx="10"/><text class="t" x="11" y="16">GeoMind</text><text class="s" x="11" y="29">产业情报 Skill</text></g>
+            <g class="pill" transform="translate(130 300)"><rect width="130" height="36" rx="10"/><text class="t" x="11" y="16">DocPilot Qwen</text><text class="s" x="11" y="29">Android App</text></g>
+            <g class="pill app" transform="translate(320 292)"><rect width="128" height="36" rx="10"/><text class="t" x="11" y="16">智办 ZhiBan</text><text class="s" x="11" y="29">HarmonyOS App</text></g>
+
+            <!-- 指南针 -->
+            <g class="compass" transform="translate(36 296)"><circle r="20"/><path class="n" d="M0 -14 L 5 0 L -5 0 Z"/><path class="s2" d="M0 14 L 5 0 L -5 0 Z"/><text x="0" y="-23" text-anchor="middle">N</text></g>
+          </svg>
+          <div class="map-foot">
+            <span><svg class="icon"><use href="#i-spark"/></svg>2 个模型平台</span>
+            <span><svg class="icon"><use href="#i-puzzle"/></svg>3 个代表 Skill</span>
+            <span><svg class="icon"><use href="#i-phone"/></svg>2 款 App</span>
+          </div>
+        </figure>
+      </div>
+      <div class="kpis">
+        <div class="kpi lead"><svg class="icon"><use href="#i-eye"/></svg><b>958 万+</b><span>全网文章阅读量</span></div>
+        <div class="kpi"><svg class="icon"><use href="#i-nodes"/></svg><b>1,193 万+</b><span>MCP 累计调用</span></div>
+        <div class="kpi"><svg class="icon"><use href="#i-puzzle"/></svg><b>1,223</b><span>Skill 累计下载</span></div>
+        <div class="kpi"><svg class="icon"><use href="#i-users"/></svg><b>2 万+</b><span>全网粉丝</span></div>
+        <div class="kpi"><svg class="icon"><use href="#i-pen"/></svg><b>270+</b><span>原创文章</span></div>
+      </div>
+      <p class="kpi-note">数据截至 2026 年 8 月 23 日，同一篇文章在多个平台的阅读量合并计算。</p>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="panel" id="strengths" aria-labelledby="strengths-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-zap"/></svg></span>
+        <div><h2 id="strengths-title">核心优势</h2><p>四件我做得比较好的事，每一件都有公开的作品可以验证。</p></div>
+      </div>
+      <div class="strengths">
+        <article class="strength">
+          <span class="badge"><svg class="icon"><use href="#i-rocket"/></svg></span>
+          <div><h3>一个人完成从想法到上线</h3><p>从 UI 原型、开发、打包到开源文档独立完成。DocPilot Qwen 用 30 天从零做成可安装的 Android App。</p><p class="proof"><svg class="icon"><use href="#i-check"/></svg>4 款 App、10 个 Skill 均已公开</p></div>
+        </article>
+        <article class="strength">
+          <span class="badge"><svg class="icon"><use href="#i-nodes"/></svg></span>
+          <div><h3>擅长把多种 AI 能力串起来</h3><p>熟练组合 Qwen、豆包 Seed、腾讯云 AI、高德与腾讯位置服务、飞书 CLI、TextIn 等能力，做成一条完整可用的链路。</p><p class="proof"><svg class="icon"><use href="#i-check"/></svg>MCP 累计调用超 1,193 万次</p></div>
+        </article>
+        <article class="strength">
+          <span class="badge"><svg class="icon"><use href="#i-shield"/></svg></span>
+          <div><h3>让 AI 的输出可信、可追溯</h3><p>每条 AI 结果都尽量带上来源：LifeTrace 标注史料与可信度，MatTrace 给数据附原文与页码，XGuard 护栏把安全策略接进 CI。</p><p class="proof"><svg class="icon"><use href="#i-check"/></svg>MatTrace、XGuard 动态安全护栏</p></div>
+        </article>
+        <article class="strength">
+          <span class="badge"><svg class="icon"><use href="#i-trend"/></svg></span>
+          <div><h3>能把技术讲清楚、传出去</h3><p>写的教程新手能跟着跑通，复盘文章公开踩过的坑。单篇最高阅读超过 18 万，多篇获平台首页推荐。</p><p class="proof"><svg class="icon"><use href="#i-check"/></svg>腾讯云 40 次首页推荐</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 方向 -->
+    <section class="panel" id="direction" aria-labelledby="direction-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-target"/></svg></span>
+        <div><h2 id="direction-title">我的方向</h2><p>LucianaiB 专注 AI 能力和真实用户之间的最后一公里：把模型、工具和数据接成一个顺手的产品。</p></div>
+      </div>
+      <div class="dirs">
+        <article class="dir">
+          <div class="dir-top"><svg class="icon"><use href="#i-spark"/></svg><h3>AI 应用落地</h3></div>
+          <p>把大模型接进具体流程，让它真正替人干活。</p>
+          <ul>
+            <li><svg class="icon"><use href="#i-chev"/></svg>文档解析、问答与信息抽取</li>
+            <li><svg class="icon"><use href="#i-chev"/></svg>Dify、飞书多维表等工作流编排</li>
+            <li><svg class="icon"><use href="#i-chev"/></svg>AI 输出的安全护栏与可追溯性</li>
+          </ul>
+        </article>
+        <article class="dir">
+          <div class="dir-top"><svg class="icon"><use href="#i-phone"/></svg><h3>AI App 设计与开发</h3></div>
+          <p>从 UI 原型到可安装的 App，覆盖 Android 与 HarmonyOS。</p>
+          <ul>
+            <li><svg class="icon"><use href="#i-chev"/></svg>Kotlin + Jetpack Compose 原生开发</li>
+            <li><svg class="icon"><use href="#i-chev"/></svg>云端模型接入与端侧推理准备</li>
+            <li><svg class="icon"><use href="#i-chev"/></svg>用 AI 编程智能体加速开发</li>
+          </ul>
+        </article>
+        <article class="dir">
+          <div class="dir-top"><svg class="icon"><use href="#i-nodes"/></svg><h3>Agent Skill 与 MCP</h3></div>
+          <p>把一套做事方法封装成 Skill，让各类智能体都能复用。</p>
+          <ul>
+            <li><svg class="icon"><use href="#i-chev"/></svg>地图叙事与产业情报可视化</li>
+            <li><svg class="icon"><use href="#i-chev"/></svg>科研文献的可信抽取</li>
+            <li><svg class="icon"><use href="#i-chev"/></svg>内容创作与发布自动化</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 项目 -->
+    <section class="panel" id="projects" aria-labelledby="projects-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-grid"/></svg></span>
+        <div><h2 id="projects-title">项目案例</h2><p>App 在前，Skill 在后。点开「案例详情」可以看到背景、我做了什么、技术方案和成果。</p></div>
+      </div>
+      <div class="projects">
+
+        <article class="proj" id="docpilot-qwen">
+          <div class="proj-media">
+            <img src="assets/img/projects/docpilot-cover.webp" alt="DocPilot Qwen 封面：本地优先的智能文档助手，集成 Qwen 千问模型与 TextIn 智能提取" width="1200" height="675" loading="lazy" decoding="async">
+            <span class="proj-type app"><svg class="icon"><use href="#i-phone"/></svg>Android App</span>
+          </div>
+          <div class="proj-body">
+            <h3>DocPilot Qwen：手机上的开源文档 AI 助手</h3>
+            <p class="one">DocPilot Qwen 是 LucianaiB 开发的 Android 开源文档 AI 助手，把文档导入、解析、问答、摘要和模板抽取放进一个原生 App。</p>
+            <ul class="chips stack-chips"><li class="chip">Kotlin</li><li class="chip">Jetpack Compose</li><li class="chip">Qwen</li><li class="chip">TextIn xParse</li><li class="chip">MNN</li></ul>
+            <p class="metrics"><span><svg class="icon"><use href="#i-star"/></svg>GitHub 6 Star</span><span><svg class="icon"><use href="#i-eye"/></svg>文章阅读 5,031</span><span><svg class="icon"><use href="#i-clock"/></svg>30 天完成</span></p>
+            <details>
+              <summary><svg class="icon"><use href="#i-chev"/></svg>案例详情</summary>
+              <dl class="case-dl">
+                <div><dt>背景</dt><dd>多数文档 AI 工具依赖桌面端或封闭产品，学生和开发者很难拆开学习和复用。</dd></div>
+                <div><dt>我做了什么</dt><dd>独立完成 UI 原型到可安装 APK；内置 5 个示例文档，无 API Key 时用本地规则兜底，演示链路不中断。</dd></div>
+                <div><dt>技术方案</dt><dd>Compose + Room + Retrofit；TextIn xParse 解析 PDF、Office 与图片；Qwen 普通与流式问答；Keystore 保存凭证；集成 MNN 运行库，为 Arm SME2 端侧推理预留路径。</dd></div>
+                <div><dt>成果</dt><dd>完全开源并提供 APK，可直接用作 AI 应用实践项目或毕设原型。</dd></div>
+              </dl>
+            </details>
+            <div class="proj-links"><a href="https://github.com/LucianaiB2004/DocPilot-Qwen"><svg class="icon"><use href="#i-branch"/></svg>源码</a><a href="https://blog.csdn.net/lwcwam/article/details/161628860"><svg class="icon"><use href="#i-book"/></svg>开源文章</a></div>
+          </div>
+        </article>
+
+        <article class="proj" id="zhiban">
+          <div class="proj-media">
+            <svg viewBox="0 0 640 360" role="img" aria-label="智办 ZhiBan 示意插画：手机上的专注计时环与关卡进度">
+              <defs>
+                <linearGradient id="zb-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1e7"/><stop offset="1" stop-color="#e9edff"/></linearGradient>
+                <linearGradient id="zb-ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a4c"/><stop offset="1" stop-color="#e85d17"/></linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#zb-bg)"/>
+              <g fill="none" stroke="#2d48d8" stroke-opacity=".08"><path d="M0 60H640M0 120H640M0 180H640M0 240H640M0 300H640M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+              <rect x="250" y="34" width="140" height="292" rx="26" fill="#ffffff" stroke="#131726" stroke-width="5"/>
+              <rect x="296" y="46" width="48" height="8" rx="4" fill="#131726"/>
+              <circle cx="320" cy="150" r="48" fill="none" stroke="#eef1f8" stroke-width="12"/>
+              <circle cx="320" cy="150" r="48" fill="none" stroke="url(#zb-ring)" stroke-width="12" stroke-linecap="round" stroke-dasharray="226 302" transform="rotate(-90 320 150)"/>
+              <text x="320" y="158" text-anchor="middle" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="24" font-weight="800" fill="#131726">25:00</text>
+              <rect x="272" y="222" width="96" height="10" rx="5" fill="#eef1f8"/><rect x="272" y="222" width="66" height="10" rx="5" fill="#2d48d8"/>
+              <rect x="272" y="246" width="44" height="44" rx="10" fill="#e8ecff"/><rect x="324" y="246" width="44" height="44" rx="10" fill="#fff0e6"/>
+              <path d="M294 258l3.2 6.5 7.2 1-5.2 5 1.2 7.1-6.4-3.4-6.4 3.4 1.2-7.1-5.2-5 7.2-1z" fill="#2d48d8"/>
+              <path d="M346 280v-24M338 264l8-8 8 8" fill="none" stroke="#e85d17" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <g transform="translate(110 96)"><rect width="104" height="56" rx="14" fill="#ffffff" stroke="#e0e4ef" stroke-width="2"/><text x="16" y="25" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="13" fill="#6a7088">Lv.</text><text x="16" y="45" font-family="Segoe UI, Roboto, Arial, sans-serif" font-size="20" font-weight="800" fill="#131726">12</text><circle cx="78" cy="28" r="12" fill="#fff0e6"/><path d="M78 20v16M70 28h16" stroke="#e85d17" stroke-width="3" stroke-linecap="round"/></g>
+              <g transform="translate(428 200)"><rect width="110" height="56" rx="14" fill="#ffffff" stroke="#e0e4ef" stroke-width="2"/><circle cx="26" cy="28" r="11" fill="#e8ecff"/><path d="M21 28l4 4 7-8" fill="none" stroke="#2d48d8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="46" y="34" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="700" fill="#131726">专注达成</text></g>
+            </svg>
+            <span class="proj-type app"><svg class="icon"><use href="#i-phone"/></svg>HarmonyOS App</span>
+          </div>
+          <div class="proj-body">
+            <h3>智办 ZhiBan：游戏化专注应用</h3>
+            <p class="one">智办 ZhiBan 是 LucianaiB 借助华为云码道 CodeArts 代码智能体开发的 HarmonyOS 游戏化专注应用，用游戏机制帮用户坚持专注。</p>
+            <ul class="chips stack-chips"><li class="chip">HarmonyOS</li><li class="chip">CodeArts 智能体</li><li class="chip">AI 编程</li></ul>
+            <p class="metrics"><span><svg class="icon"><use href="#i-eye"/></svg>实战文章阅读 10,083</span><span><svg class="icon"><use href="#i-clock"/></svg>2026 年 9 月</span></p>
+            <details>
+              <summary><svg class="icon"><use href="#i-chev"/></svg>案例详情</summary>
+              <dl class="case-dl">
+                <div><dt>背景</dt><dd>专注类工具容易半途而废，游戏化的反馈能让坚持变得更轻松。</dd></div>
+                <div><dt>我做了什么</dt><dd>完成产品设计与 HarmonyOS 原生开发，并把 AI 编程的全过程整理成实战文章。</dd></div>
+                <div><dt>技术方案</dt><dd>HarmonyOS 应用开发，全程使用华为云码道 CodeArts 代码智能体辅助编码。</dd></div>
+                <div><dt>成果</dt><dd>实战文章在 CSDN 阅读超过 1 万。同月还完成了「追月」月夜明信片和国庆头像框两款鸿蒙应用。</dd></div>
+              </dl>
+            </details>
+            <div class="proj-links"><a href="https://blog.csdn.net/lwcwam/article/details/166646713"><svg class="icon"><use href="#i-book"/></svg>实战文章</a><a href="https://blog.csdn.net/lwcwam/article/details/166847873"><svg class="icon"><use href="#i-moonpost"/></svg>追月</a></div>
+          </div>
+        </article>
+
+        <article class="proj" id="lifetrace">
+          <div class="proj-media">
+            <img src="assets/img/projects/lifetrace.webp" alt="LifeTrace 效果图：在高德地图上播放刘备一生的足迹路线，右侧为人物像与故事卡片" width="1200" height="624" loading="lazy" decoding="async">
+            <span class="proj-type skill"><svg class="icon"><use href="#i-map"/></svg>AI Skill</span>
+          </div>
+          <div class="proj-body">
+            <h3>人生经纬 LifeTrace：可播放的人生足迹地图</h3>
+            <p class="one">LifeTrace 是 LucianaiB 基于高德开放平台开发的 AI Skill，把人物一生整理成「时间、地点、事件、来源、可信度」，在真实地图上播放动态路线。</p>
+            <ul class="chips stack-chips"><li class="chip">Node.js</li><li class="chip">高德 JS API</li><li class="chip">OpenClaw Skill</li></ul>
+            <p class="metrics"><span><svg class="icon"><use href="#i-star"/></svg>16 Star、7 Fork</span><span><svg class="icon"><use href="#i-eye"/></svg>文章阅读 4,649</span></p>
+            <details>
+              <summary><svg class="icon"><use href="#i-chev"/></svg>案例详情</summary>
+              <dl class="case-dl">
+                <div><dt>背景</dt><dd>人物资料散落各处，AI 生成的经历又常常没有出处。</dd></div>
+                <div><dt>我做了什么</dt><dd>以刘备一生为完整 Demo，设计数据结构、校验、构建与预览流程，封装成智能体可调用的 Skill 并发布到 GitHub 与 ClawHub。</dd></div>
+                <div><dt>技术方案</dt><dd>高德地理编码与 JS API 播放路线，地图与时间线联动；4:3 统一画廊；Key 只从环境变量读取。</dd></div>
+                <div><dt>成果</dt><dd>目前 Star 最多的开源项目，提供在线预览。</dd></div>
+              </dl>
+            </details>
+            <div class="proj-links"><a href="https://lucianaib2004.github.io/life-trace-amap/"><svg class="icon"><use href="#i-out"/></svg>在线预览</a><a href="https://github.com/LucianaiB2004/life-trace-amap"><svg class="icon"><use href="#i-branch"/></svg>源码</a><a href="https://blog.csdn.net/lwcwam/article/details/163022872"><svg class="icon"><use href="#i-book"/></svg>文章</a></div>
+          </div>
+        </article>
+
+        <article class="proj" id="novel-fan-graph">
+          <div class="proj-media">
+            <img src="assets/img/projects/novel-fan-graph.webp" alt="小说迷图谱效果图：《斗破苍穹》前 100 章的人物关系图谱与章节进度控制" width="1200" height="629" loading="lazy" decoding="async">
+            <span class="proj-type skill"><svg class="icon"><use href="#i-graph"/></svg>AI Skill</span>
+          </div>
+          <div class="proj-body">
+            <h3>小说迷图谱 Novel Fan Graph</h3>
+            <p class="one">小说迷图谱是 LucianaiB 基于豆包 Doubao-Seed-Evolving 开发的 AI Skill，把小说转成人物关系、场景地图、势力图谱和事件时间线，并按章节控制剧透。</p>
+            <ul class="chips stack-chips"><li class="chip">Doubao-Seed-Evolving</li><li class="chip">Python</li><li class="chip">D3.js</li></ul>
+            <p class="metrics"><span><svg class="icon"><use href="#i-star"/></svg>13 Star</span><span><svg class="icon"><use href="#i-eye"/></svg>文章阅读 3,499</span></p>
+            <details>
+              <summary><svg class="icon"><use href="#i-chev"/></svg>案例详情</summary>
+              <dl class="case-dl">
+                <div><dt>背景</dt><dd>读长篇小说时脑海里会自动形成人物关系和世界地图，却没有工具把它画出来，更不能避免剧透。</dd></div>
+                <div><dt>我做了什么</dt><dd>以《斗破苍穹》前 100 章为完整案例，设计「章节、人物、关系、地点、势力、事件、证据」数据模型和四视图交互页面。</dd></div>
+                <div><dt>技术方案</dt><dd>模型抽取结构化数据，Python 校验并逐字回查证据，D3.js v7 渲染交互图谱，支持亮暗主题。</dd></div>
+                <div><dt>成果</dt><dd>开源并提供在线预览。</dd></div>
+              </dl>
+            </details>
+            <div class="proj-links"><a href="https://lucianaib2004.github.io/novel-fan-graph/"><svg class="icon"><use href="#i-out"/></svg>在线预览</a><a href="https://github.com/LucianaiB2004/novel-fan-graph"><svg class="icon"><use href="#i-branch"/></svg>源码</a><a href="https://blog.csdn.net/lwcwam/article/details/163157461"><svg class="icon"><use href="#i-book"/></svg>文章</a></div>
+          </div>
+        </article>
+
+        <article class="proj" id="geomind">
+          <div class="proj-media">
+            <img src="assets/img/projects/geomind.webp" alt="GeoMind 效果图：中国新能源与智能制造产业分布网络，在腾讯卫星地图上展示产业节点与关系链路" width="1200" height="675" loading="lazy" decoding="async">
+            <span class="proj-type skill"><svg class="icon"><use href="#i-compass"/></svg>AI Skill</span>
+          </div>
+          <div class="proj-body">
+            <h3>GeoMind：科研与产业地理情报可视化</h3>
+            <p class="one">GeoMind 是 LucianaiB 基于飞书 CLI 与腾讯位置服务开发的 Skill，从飞书文档自动抽取机构、企业、园区和合作关系，生成可交互的产业地理情报地图。</p>
+            <ul class="chips stack-chips"><li class="chip">TypeScript</li><li class="chip">飞书 CLI</li><li class="chip">腾讯位置服务</li><li class="chip">JSON Schema</li></ul>
+            <p class="metrics"><span><svg class="icon"><use href="#i-eye"/></svg>文章阅读 12,515</span><span><svg class="icon"><use href="#i-pin"/></svg>32 节点、35 条关系</span></p>
+            <details>
+              <summary><svg class="icon"><use href="#i-chev"/></svg>案例详情</summary>
+              <dl class="case-dl">
+                <div><dt>背景</dt><dd>产业信息大量沉淀在飞书文档里，纯文本很难呈现空间格局和跨区域协同关系。</dd></div>
+                <div><dt>我做了什么</dt><dd>设计从文档读取、实体与关系抽取、地理编码、结构校验到地图前端、飞书回写的完整链路。</dd></div>
+                <div><dt>技术方案</dt><dd>飞书 CLI 读写文档；腾讯位置服务地理编码带缓存与兜底；腾讯地图 JSAPI GL 渲染弧形关系线；生成白板 DSL。</dd></div>
+                <div><dt>成果</dt><dd>腾讯位置服务开发者征文大赛作品，文章阅读超过 1.2 万。</dd></div>
+              </dl>
+            </details>
+            <div class="proj-links"><a href="https://github.com/LucianaiB2004/GeoMind"><svg class="icon"><use href="#i-branch"/></svg>源码</a><a href="https://blog.csdn.net/lwcwam/article/details/160597026"><svg class="icon"><use href="#i-book"/></svg>文章</a></div>
+          </div>
+        </article>
+
+        <article class="proj" id="mattrace">
+          <div class="proj-media">
+            <img src="assets/img/projects/mattrace.webp" alt="MatTrace 封面：材料中的每一个数据都要有证据" width="1200" height="800" loading="lazy" decoding="async">
+            <span class="proj-type skill"><svg class="icon"><use href="#i-flask"/></svg>AI 应用</span>
+          </div>
+          <div class="proj-body">
+            <h3>MatTrace：材料科研的文献证据抽取</h3>
+            <p class="one">MatTrace 是 LucianaiB 开发的材料科研 Skill 与网页 Agent，从论文、专利和技术数据表中抽取带原文、页码、测试条件与可信度的材料数据。</p>
+            <ul class="chips stack-chips"><li class="chip">Agent</li><li class="chip">OpenAI 兼容接口</li><li class="chip">GitHub Actions</li></ul>
+            <p class="metrics"><span><svg class="icon"><use href="#i-doc"/></svg>导出 JSON / CSV / Markdown</span><span><svg class="icon"><use href="#i-play"/></svg>B 站演示视频</span></p>
+            <details>
+              <summary><svg class="icon"><use href="#i-chev"/></svg>案例详情</summary>
+              <dl class="case-dl">
+                <div><dt>背景</dt><dd>AI 读文献很快，但提取的数值出自哪一页、测试条件能否比较，多数工具答不上来。</dd></div>
+                <div><dt>我做了什么</dt><dd>拆成「可复用的抽取 Skill + 可视化网页 Agent」两层，演示数据全部来自三篇真实 arXiv 论文。</dd></div>
+                <div><dt>技术方案</dt><dd>单位规范化、缺失条件检测、跨文献数值冲突核验；Key 仅存浏览器本地；自动部署到 GitHub Pages。</dd></div>
+                <div><dt>成果</dt><dd>提供在线演示与演示视频，每条数据都能回到原文核对。</dd></div>
+              </dl>
+            </details>
+            <div class="proj-links"><a href="https://lucianaib2004.github.io/mattrace-demo/"><svg class="icon"><use href="#i-out"/></svg>在线演示</a><a href="https://github.com/LucianaiB2004/mattrace"><svg class="icon"><use href="#i-branch"/></svg>源码</a><a href="https://www.bilibili.com/video/BV1qPuK6TEMp/"><svg class="icon"><use href="#i-play"/></svg>视频</a></div>
+          </div>
+        </article>
+
+        <article class="proj" id="ai-truth-detective">
+          <div class="proj-media">
+            <svg viewBox="0 0 640 360" role="img" aria-label="AI 打假侦探示意插画：放大镜检查图片、文本、视频三类内容并给出验真结果">
+              <defs><linearGradient id="td-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9edff"/><stop offset="1" stop-color="#f6f7fb"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#td-bg)"/>
+              <g fill="none" stroke="#2d48d8" stroke-opacity=".08"><path d="M0 60H640M0 120H640M0 180H640M0 240H640M0 300H640M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+              <g transform="translate(70 50)"><rect width="150" height="110" rx="14" fill="#ffffff" stroke="#e0e4ef" stroke-width="2"/><path d="M18 88l34-36 24 24 18-16 38 28z" fill="#cdd6ff"/><circle cx="110" cy="34" r="12" fill="#ffd2b8"/><rect x="10" y="122" width="80" height="26" rx="13" fill="#ffffff" stroke="#e0e4ef"/><text x="22" y="140" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#131726">图片</text><circle cx="72" cy="135" r="6" fill="#22a06b"/></g>
+              <g transform="translate(245 50)"><rect width="150" height="110" rx="14" fill="#ffffff" stroke="#e0e4ef" stroke-width="2"/><rect x="18" y="24" width="114" height="8" rx="4" fill="#dfe4f2"/><rect x="18" y="44" width="96" height="8" rx="4" fill="#dfe4f2"/><rect x="18" y="64" width="108" height="8" rx="4" fill="#dfe4f2"/><rect x="18" y="84" width="70" height="8" rx="4" fill="#dfe4f2"/><rect x="10" y="122" width="80" height="26" rx="13" fill="#ffffff" stroke="#e0e4ef"/><text x="22" y="140" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#131726">文本</text><circle cx="72" cy="135" r="6" fill="#e85d17"/></g>
+              <g transform="translate(420 50)"><rect width="150" height="110" rx="14" fill="#131726"/><path d="M64 38v34l30-17z" fill="#ffffff"/><rect x="16" y="92" width="118" height="5" rx="2.5" fill="#454b62"/><rect x="16" y="92" width="62" height="5" rx="2.5" fill="#ff8b4d"/><rect x="10" y="122" width="80" height="26" rx="13" fill="#ffffff" stroke="#e0e4ef"/><text x="22" y="140" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#131726">视频</text><circle cx="72" cy="135" r="6" fill="#22a06b"/></g>
+              <g transform="translate(230 200)"><circle cx="60" cy="60" r="44" fill="#ffffff" fill-opacity=".75" stroke="#2d48d8" stroke-width="10"/><path d="M92 92l34 34" stroke="#2d48d8" stroke-width="16" stroke-linecap="round"/><path d="M40 60l14 14 26-28" fill="none" stroke="#e85d17" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+              <g transform="translate(420 250)"><rect width="150" height="64" rx="14" fill="#ffffff" stroke="#e0e4ef" stroke-width="2"/><text x="16" y="27" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="12" fill="#6a7088">验真报告</text><text x="16" y="49" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="800" fill="#131726">3 项检测完成</text></g>
+            </svg>
+            <span class="proj-type skill"><svg class="icon"><use href="#i-scan"/></svg>AI 应用</span>
+          </div>
+          <div class="proj-body">
+            <h3>AI 打假侦探：多模态内容验真</h3>
+            <p class="one">AI 打假侦探是 LucianaiB 基于腾讯云 AI 能力开发的工具，检测图片、文本和视频是否由 AI 生成，并输出结构化验真报告。</p>
+            <ul class="chips stack-chips"><li class="chip">Python</li><li class="chip">腾讯云 AI</li><li class="chip">WorkBuddy Skill</li></ul>
+            <p class="metrics"><span><svg class="icon"><use href="#i-eye"/></svg>文章阅读 8,319</span><span><svg class="icon"><use href="#i-zap"/></svg>零 SDK 依赖</span></p>
+            <details>
+              <summary><svg class="icon"><use href="#i-chev"/></svg>案例详情</summary>
+              <dl class="case-dl">
+                <div><dt>背景</dt><dd>AI 生成的图片、文案和视频越来越难分辨，普通人缺少一个能复现的检测链路。</dd></div>
+                <div><dt>我做了什么</dt><dd>把腾讯云 4 项 AI 识别能力串成一条检测链路，既能当命令行工具，也能作为 Skill 接入 WorkBuddy、CodeBuddy。</dd></div>
+                <div><dt>技术方案</dt><dd>Python 标准库手写 TC3-HMAC-SHA256 签名；按扩展名自动分流；视频异步两段式任务；可选多模态交叉验证。</dd></div>
+                <div><dt>成果</dt><dd>MIT 协议开源，并录制了演示视频。</dd></div>
+              </dl>
+            </details>
+            <div class="proj-links"><a href="https://github.com/LucianaiB2004/ai-truth-detective"><svg class="icon"><use href="#i-branch"/></svg>源码</a><a href="https://blog.csdn.net/lwcwam/article/details/163804041"><svg class="icon"><use href="#i-book"/></svg>文章</a></div>
+          </div>
+        </article>
+
+        <article class="proj more">
+          <div class="proj-body">
+            <h3>更多 AI 应用与 Skill</h3>
+            <ul class="more-list">
+              <li><span class="ic"><svg class="icon"><use href="#i-receipt"/></svg></span><span><a href="https://blog.csdn.net/lwcwam/article/details/161230962">智票通</a>：Dify + EdgeOne 票据自定义提取，兼顾防数据泄露。</span></li>
+              <li><span class="ic"><svg class="icon"><use href="#i-shield"/></svg></span><span><a href="https://blog.csdn.net/lwcwam/article/details/161194199">XGuard 动态安全护栏</a>：把模型护栏接进 Agent 与 CI 流程。</span></li>
+              <li><span class="ic"><svg class="icon"><use href="#i-bell"/></svg></span><span><a href="https://blog.csdn.net/lwcwam/article/details/160799756">AI 活动推荐智能体</a>：飞书多维表搭建，每天提醒比赛截止日期。</span></li>
+              <li><span class="ic"><svg class="icon"><use href="#i-flask"/></svg></span><span><a href="https://github.com/LucianaiB2004/XRD-SKILL">XRD-SKILL</a>：XRD 数据一键成图，并发布为可编辑的飞书画板。</span></li>
+              <li><span class="ic"><svg class="icon"><use href="#i-compass"/></svg></span><span><a href="https://github.com/LucianaiB2004/DOMAIN-SCOUT-SKILL">领域侦察专家</a>：60 分钟判断一个新领域值不值得学。</span></li>
+              <li><span class="ic"><svg class="icon"><use href="#i-fire"/></svg></span><span><a href="https://github.com/LucianaiB2004/China-Hot-Ranks">中国热榜聚合器</a>：聚合 35 个平台热榜。</span></li>
+              <li><span class="ic"><svg class="icon"><use href="#i-send"/></svg></span><span><a href="https://github.com/LucianaiB2004/Wechat-Publisher">WeChat Publisher</a>：Markdown 一键发布到公众号草稿箱。</span></li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 技术栈 -->
+    <section class="panel" id="skills" aria-labelledby="skills-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-layers"/></svg></span>
+        <div><h2 id="skills-title">技术栈</h2><p>以下技术都在 LucianaiB 的开源项目或公开文章中实际使用过。</p></div>
+      </div>
+      <div class="skills">
+        <div class="skill-g"><h3><svg class="icon"><use href="#i-spark"/></svg>大模型与 Agent</h3><ul class="chips"><li class="chip cobalt">Qwen / 百炼</li><li class="chip cobalt">豆包 Seed</li><li class="chip">DeepSeek</li><li class="chip">Agent Skill</li><li class="chip">MCP</li><li class="chip">Dify</li><li class="chip">n8n</li><li class="chip">OpenClaw</li><li class="chip">WorkBuddy</li><li class="chip">CodeBuddy</li></ul></div>
+        <div class="skill-g"><h3><svg class="icon"><use href="#i-phone"/></svg>App 开发</h3><ul class="chips"><li class="chip route">Kotlin</li><li class="chip route">Jetpack Compose</li><li class="chip">Material 3</li><li class="chip">Room</li><li class="chip">Retrofit</li><li class="chip">MNN 端侧推理</li><li class="chip route">HarmonyOS</li></ul></div>
+        <div class="skill-g"><h3><svg class="icon"><use href="#i-doc"/></svg>文档与数据</h3><ul class="chips"><li class="chip">TextIn xParse</li><li class="chip">RAG 检索与重排</li><li class="chip">结构化抽取</li><li class="chip">JSON Schema</li><li class="chip">D3.js 图谱</li></ul></div>
+        <div class="skill-g"><h3><svg class="icon"><use href="#i-map"/></svg>前端与可视化</h3><ul class="chips"><li class="chip">TypeScript</li><li class="chip">JavaScript</li><li class="chip">高德 JS API</li><li class="chip">腾讯地图 JSAPI GL</li><li class="chip">GitHub Pages</li><li class="chip">EdgeOne</li></ul></div>
+        <div class="skill-g"><h3><svg class="icon"><use href="#i-terminal"/></svg>后端与自动化</h3><ul class="chips"><li class="chip">Python</li><li class="chip">Node.js</li><li class="chip">腾讯云 API</li><li class="chip">飞书 CLI / OpenAPI</li><li class="chip">微信公众号 API</li></ul></div>
+        <div class="skill-g"><h3><svg class="icon"><use href="#i-cpu"/></svg>云与算力</h3><ul class="chips"><li class="chip">腾讯云</li><li class="chip">阿里云</li><li class="chip">华为云昇腾 NPU</li><li class="chip">CloudBase</li><li class="chip">AMD ROCm</li></ul></div>
+      </div>
+    </section>
+
+    <!-- 文章 -->
+    <section class="panel" id="articles" aria-labelledby="articles-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-book"/></svg></span>
+        <div><h2 id="articles-title">精选文章</h2><p>阅读量为平台页面显示的数值（2026 年 10 月）。更多文章见 <a href="https://blog.csdn.net/lwcwam">CSDN 主页</a>。</p></div>
+      </div>
+      <div class="topics">
+        <div class="topic">
+          <h3><svg class="icon"><use href="#i-phone"/></svg>AI App 开发</h3>
+          <ol>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/166646713">我用 CodeArts 智能体打造了一款 HarmonyOS 游戏化专注应用「智办 ZhiBan」</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 10,083</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/161628860">耗时30天，DocPilot Qwen正式开源：一个免费无广的开源文档 AI 助手</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 5,031</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/166847873">用 HarmonyOS 做一张会写诗的月夜明信片：追月的完整开发复盘</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 1,008</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/166847930">把祝福戴在头像上：一款 HarmonyOS 国庆头像框的设计与开发过程</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 908</span></li>
+          </ol>
+        </div>
+        <div class="topic">
+          <h3><svg class="icon"><use href="#i-nodes"/></svg>Agent 与 Skill 落地</h3>
+          <ol>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/160597026">基于飞书 CLI + 腾讯位置的科研与产业地理情报可视化 Skill</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 12,515</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/160799756">我用飞书多维表做了一个 AI 活动推荐智能体</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 8,950</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/161194199">从模型护栏到工程门禁：基于 XGuard 二创一个 Agent/CI 动态策略安全护栏</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 8,639</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/161292187">Agent 场景落地：从概念演示到真实服务</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 5,251</span></li>
+          </ol>
+        </div>
+        <div class="topic">
+          <h3><svg class="icon"><use href="#i-spark"/></svg>大模型工具实战</h3>
+          <ol>
+            <li><a href="https://cloud.tencent.com/developer/article/2633421">Openclaw 安装使用保姆级教程（最新版）</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>腾讯云 3.56 万</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/160253754">Claude Opus 4.7太强了，保姆级使用指南</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 16,213</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/166494073">我用豆包工作 Seed-2.1-pro，复刻了 QQ 时代爆红的魔术图片</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 11,177</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/160623948">王炸组合！腾讯云 OpenClaw X 飞书 CLI，开启 Agent 基建狂潮！</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 3,996</span></li>
+          </ol>
+        </div>
+        <div class="topic">
+          <h3><svg class="icon"><use href="#i-scan"/></svg>可信 AI 与真实场景</h3>
+          <ol>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/163804041">别再被 AI 骗了：我把腾讯云 4 个 Skill 做成了个「AI 打假侦探」</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 8,319</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/163646706">毕业老学长给我留的最后一句话是：「AI 写的，别挂我名。」</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 8,733</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/163022872">我把刘备一生做成了可播放的高德地图，还把整套方法封装成了 Skill</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 4,649</span></li>
+            <li><a href="https://blog.csdn.net/lwcwam/article/details/163278382">魔珐星云为城市展厅 Agent 加个身体：具身交互智能表达界面</a><span class="meta"><svg class="icon"><use href="#i-eye"/></svg>CSDN 2,894</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 荣誉 -->
+    <section class="panel" id="honors" aria-labelledby="honors-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-award"/></svg></span>
+        <div><h2 id="honors-title">荣誉与影响力</h2><p>来自各平台个人主页的公开认证与数据。</p></div>
+      </div>
+      <div class="honors">
+        <article class="honor">
+          <svg class="medal" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="var(--cobalt-soft)"/><circle cx="26" cy="26" r="17" fill="none" stroke="var(--cobalt)" stroke-width="2.5" stroke-dasharray="3 3"/><path d="M18 31a6 6 0 0 1 .6-12A8 8 0 0 1 34 19a6 6 0 0 1-.6 12z" fill="var(--cobalt)"/></svg>
+          <div><h3>腾讯云 TDP</h3><p>腾讯云开发者社区认证身份，文章累计阅读 250 万、首页推荐 40 次。</p></div>
+        </article>
+        <article class="honor">
+          <svg class="medal" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="var(--route-soft)"/><circle cx="26" cy="26" r="17" fill="none" stroke="var(--route)" stroke-width="2.5" stroke-dasharray="3 3"/><path d="M26 15l3.2 6.6 7.3 1-5.3 5.1 1.3 7.2L26 31.5l-6.5 3.4 1.3-7.2-5.3-5.1 7.3-1z" fill="var(--route)"/></svg>
+          <div><h3>阿里云专家博主、星级博主</h3><p>同时获得乘风问答官、技术博主、开发者认证勋章；社区发表文章 85 篇、回答 1,326 个。</p></div>
+        </article>
+        <article class="honor">
+          <svg class="medal" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="var(--route-soft)"/><circle cx="26" cy="26" r="17" fill="none" stroke="var(--route)" stroke-width="2.5" stroke-dasharray="3 3"/><path d="M17 35h5l12-12-5-5-12 12z" fill="var(--route)"/></svg>
+          <div><h3>CSDN 优质创作者</h3><p>人工智能、后端开发技术领域；原创 273 篇，「AI 应用」专栏 79 篇。</p></div>
+        </article>
+        <article class="honor">
+          <svg class="medal" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="var(--cobalt-soft)"/><circle cx="26" cy="26" r="17" fill="none" stroke="var(--cobalt)" stroke-width="2.5" stroke-dasharray="3 3"/><path d="M26 15l9 3.5v6.5c0 5.5-3.8 8.8-9 10-5.2-1.2-9-4.5-9-10v-6.5z" fill="var(--cobalt)"/><path d="M22 26l3 3 5-6" fill="none" stroke="var(--cobalt-soft)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>阿里云大模型 Clouder 认证</h3><p>基于通义灵码实现高效 AI 编码；基于百炼平台构建智能体应用。</p></div>
+        </article>
+      </div>
+      </section>
+
+    <!-- 近期动态 -->
+    <section class="panel" id="recent" aria-labelledby="recent-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-clock"/></svg></span>
+        <div><h2 id="recent-title">近期动态</h2><p>2026 年以来的主要成果，最新的在最上面。</p></div>
+      </div>
+      <ol class="timeline">
+        <li><span class="t-dot"><svg class="icon"><use href="#i-scan"/></svg></span><div><time datetime="2026-10">2026.10</time><h3>用 TextIn xParse + WorkBuddy 做答辩材料审查</h3><p>让 AI 逐条追问论据和证据，把材料审查做成可复用的流程。</p></div></li>
+        <li><span class="t-dot"><svg class="icon"><use href="#i-phone"/></svg></span><div><time datetime="2026-09">2026.09</time><h3>一个月发布三款 HarmonyOS 应用</h3><p>智办 ZhiBan、追月月夜明信片、国庆头像框，其中智办实战文章阅读超过 1 万。</p></div></li>
+        <li><span class="t-dot"><svg class="icon"><use href="#i-shield"/></svg></span><div><time datetime="2026-08">2026.08</time><h3>发布 AI 打假侦探与 MatTrace</h3><p>一个检测内容是否由 AI 生成，一个让 AI 抽取的科研数据都能回到原文。</p></div></li>
+        <li><span class="t-dot"><svg class="icon"><use href="#i-map"/></svg></span><div><time datetime="2026-07">2026.07</time><h3>LifeTrace 与小说迷图谱开源</h3><p>两个项目成为 GitHub 上 Star 最多的作品，均提供在线预览。</p></div></li>
+        <li><span class="t-dot"><svg class="icon"><use href="#i-doc"/></svg></span><div><time datetime="2026-06">2026.06</time><h3>DocPilot Qwen 正式开源</h3><p>30 天完成的 Android 文档 AI 助手，提供源码与安装包。</p></div></li>
+        <li><span class="t-dot"><svg class="icon"><use href="#i-nodes"/></svg></span><div><time datetime="2026-05">2026.05</time><h3>集中攻克 Agent 落地</h3><p>发布 XGuard 动态安全护栏、智票通、飞书多维表活动推荐智能体。</p></div></li>
+        <li><span class="t-dot"><svg class="icon"><use href="#i-compass"/></svg></span><div><time datetime="2026-04">2026.04</time><h3>GeoMind 参加腾讯位置服务开发者征文大赛</h3><p>参赛文章阅读超过 1.2 万。</p></div></li>
+        <li><span class="t-dot"><svg class="icon"><use href="#i-fire"/></svg></span><div><time datetime="2026-03">2026.03</time><h3>OpenClaw 系列教程走红</h3><p>保姆级教程在腾讯云开发者社区阅读 3.56 万，同期发布公众号、小红书自动化 Skill。</p></div></li>
+      </ol>
+    </section>
+
+    <!-- 合作 -->
+    <section class="panel" id="cooperation" aria-labelledby="coop-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-brief"/></svg></span>
+        <div><h2 id="coop-title">交流与合作</h2><p>喜欢 AI 的朋友都欢迎来聊。有具体需求的话，这些是我能认真接住的事。</p></div>
+      </div>
+      <div class="services">
+        <article class="service hot"><span class="badge"><svg class="icon"><use href="#i-chat"/></svg></span><h3>AI 话题交流</h3><p>新模型、新工具、Agent 玩法，或者你那个「AI 能不能做」的想法。</p></article>
+        <article class="service"><span class="badge"><svg class="icon"><use href="#i-target"/></svg></span><h3>AI 应用落地咨询</h3><p>梳理流程里哪一步值得交给 AI，选模型与工具，做出可验证的原型。</p></article>
+        <article class="service hot"><span class="badge"><svg class="icon"><use href="#i-phone"/></svg></span><h3>AI App 与小程序开发</h3><p>Android、HarmonyOS、Web 应用与小程序，从原型到可用版本。</p></article>
+        <article class="service"><span class="badge"><svg class="icon"><use href="#i-puzzle"/></svg></span><h3>Agent Skill 定制</h3><p>把你的工作方法封装成 OpenClaw、WorkBuddy 等智能体可调用的 Skill。</p></article>
+        <article class="service"><span class="badge"><svg class="icon"><use href="#i-pen"/></svg></span><h3>技术约稿与评测</h3><p>AI 产品评测、实战教程与开发复盘，多平台同步发布。</p></article>
+        <article class="service"><span class="badge"><svg class="icon"><use href="#i-present"/></svg></span><h3>分享与讲座</h3><p>面向学生和开发者的 AI 应用开发分享，以可上手的实战为主。</p></article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="panel" id="faq" aria-labelledby="faq-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-help"/></svg></span>
+        <div><h2 id="faq-title">常见问题</h2><p>关于 LucianaiB，大家最常问的几个问题。</p></div>
+      </div>
+      <div class="faq">
+        <details open><summary><span class="q"><svg class="icon"><use href="#i-user"/></svg></span><h3>LucianaiB 是谁？</h3><svg class="icon chev"><use href="#i-chev"/></svg></summary><div class="ans"><p>LucianaiB 是一名专注于 AI 应用落地与 AI App 设计开发的开发者和技术博主。他把大模型能力做成可以直接使用的应用、App 和 Agent Skill，代表作品有 Android 文档 AI 助手 DocPilot Qwen、HarmonyOS 专注应用智办 ZhiBan、高德地图人生足迹 Skill LifeTrace 和产业地理情报 Skill GeoMind。</p></div></details>
+        <details><summary><span class="q"><svg class="icon"><use href="#i-layers"/></svg></span><h3>LucianaiB 擅长哪些技术？</h3><svg class="icon chev"><use href="#i-chev"/></svg></summary><div class="ans"><p>LucianaiB 擅长大模型应用开发与智能体（Agent / Skill / MCP）工程，熟悉 Qwen、豆包 Seed 等模型 API 接入、TextIn 文档解析、Dify 工作流；App 方向使用 Kotlin + Jetpack Compose 开发 Android 应用，并开发 HarmonyOS 应用；常用 Python、TypeScript / Node.js，以及高德、腾讯位置服务、飞书 CLI、腾讯云 AI 能力等开放平台。</p></div></details>
+        <details><summary><span class="q"><svg class="icon"><use href="#i-grid"/></svg></span><h3>LucianaiB 做过哪些 AI 应用和 App？</h3><svg class="icon chev"><use href="#i-chev"/></svg></summary><div class="ans"><p>LucianaiB 的 AI App 包括 Android 开源文档 AI 助手 DocPilot Qwen、HarmonyOS 游戏化专注应用智办 ZhiBan、HarmonyOS 月夜明信片「追月」和国庆头像框；AI 应用与 Skill 包括 LifeTrace 人生经纬、GeoMind、小说迷图谱、MatTrace 材料证据追踪、AI 打假侦探、基于 Dify 与 EdgeOne 的票据提取应用智票通，以及基于 XGuard 的 Agent/CI 动态安全护栏。</p></div></details>
+        <details><summary><span class="q"><svg class="icon"><use href="#i-book"/></svg></span><h3>LucianaiB 在哪些平台发布内容？</h3><svg class="icon chev"><use href="#i-chev"/></svg></summary><div class="ans"><p>LucianaiB 主要在 CSDN（blog.csdn.net/lwcwam）、腾讯云开发者社区、阿里云开发者社区、掘金和 B 站发布 AI 应用实战文章与视频，开源项目发布在 GitHub（github.com/LucianaiB2004）。截至 2026 年 8 月，LucianaiB 全网文章阅读量超过 958 万、粉丝超过 2 万、原创文章 270 余篇，发布的 MCP 累计调用超过 1,193 万次，Skill 累计下载 1,223 次。</p></div></details>
+        <details><summary><span class="q"><svg class="icon"><use href="#i-chat"/></svg></span><h3>如何联系 LucianaiB 交流 AI 或合作？</h3><svg class="icon chev"><use href="#i-chev"/></svg></summary><div class="ans"><p>添加 LucianaiB 的微信 LucianaiB20040318，备注来意即可。欢迎交流 AI 应用、Agent 与 AI App 话题，也可以洽谈 AI 应用落地咨询、AI App / 小程序定制开发、技术文章约稿和分享讲座。</p></div></details>
+        <details><summary><span class="q"><svg class="icon"><use href="#i-branch"/></svg></span><h3>LucianaiB 的开源项目可以免费使用吗？</h3><svg class="icon chev"><use href="#i-chev"/></svg></summary><div class="ans"><p>可以。LucianaiB 在 GitHub 上的 LifeTrace、AI 打假侦探、XRD-SKILL、WeChat Publisher 等项目采用 MIT 协议开源，DocPilot Qwen 也完全开源，使用时保留原始版权与许可声明即可。</p></div></details>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="panel contact" id="contact" aria-labelledby="contact-title">
+      <div class="sec-head">
+        <span class="sec-ic"><svg class="icon"><use href="#i-chat"/></svg></span>
+        <div><h2 id="contact-title">一起聊聊 AI</h2><p>不管你是刚开始玩 AI，还是已经在做产品，都欢迎加我微信。备注一下来意，我会尽快通过。</p></div>
+      </div>
+      <div class="contact-grid">
+        <div class="wx-big">
+          <span class="lab"><svg class="icon"><use href="#i-wechat"/></svg>微信号</span>
+          <span class="id">LucianaiB20040318</span>
+          <div class="row">
+            <button class="btn btn-primary" type="button" data-copy="LucianaiB20040318"><svg class="icon"><use href="#i-copy"/></svg><span>复制微信号</span></button>
+            <span class="copy-status" role="status" aria-live="polite"></span>
+          </div>
+          <p class="mail"><svg class="icon"><use href="#i-mail"/></svg>邮箱：<span>LucianaiB0318@163.com</span></p>
+        </div>
+        <ul class="plat-list" aria-label="各平台主页">
+          <li><a href="https://blog.csdn.net/lwcwam"><svg class="icon"><use href="#i-book"/></svg><span><b>CSDN</b><small>273 篇原创</small></span></a></li>
+          <li><a href="https://cloud.tencent.com/developer/user/11328216"><svg class="icon"><use href="#i-cloud"/></svg><span><b>腾讯云</b><small>阅读 250 万</small></span></a></li>
+          <li><a href="https://developer.aliyun.com/profile/uu7b7ecltrr7k"><svg class="icon"><use href="#i-cloud"/></svg><span><b>阿里云</b><small>专家博主</small></span></a></li>
+          <li><a href="https://github.com/LucianaiB2004"><svg class="icon"><use href="#i-branch"/></svg><span><b>GitHub</b><small>20 个开源仓库</small></span></a></li>
+          <li><a href="https://space.bilibili.com/1068659541"><svg class="icon"><use href="#i-play"/></svg><span><b>哔哩哔哩</b><small>项目演示</small></span></a></li>
+          <li><a href="https://clawhub.ai/lucianaib2004"><svg class="icon"><use href="#i-puzzle"/></svg><span><b>ClawHub</b><small>Skill 发布页</small></span></a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="footer">
+  <p>© 2026 LucianaiB，AI 应用落地与 AI App 开发者</p>
+  <p><a href="llms.txt">llms.txt</a>　<a href="sitemap.xml">站点地图</a>　更新于 2026-10-08</p>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
