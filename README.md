@@ -2,7 +2,7 @@
 
 > LucianaiB 是一名专注于 AI 应用落地与 AI App 设计开发的开发者和技术博主。代表作品有 Android 文档 AI 助手 DocPilot Qwen、HarmonyOS 专注应用智办 ZhiBan，以及 LifeTrace（人生经纬）、GeoMind、小说迷图谱、MatTrace 等开源 AI Skill。
 
-本仓库是 LucianaiB 个人主页的源码，线上地址：**https://lucianaib.is-a.dev**
+本仓库是 LucianaiB 个人主页的源码，线上地址：**https://lucianaib2004.github.io**
 
 ## 关于 LucianaiB
 
@@ -24,7 +24,7 @@
 
 ## 找到 LucianaiB
 
-- 个人主页：https://lucianaib.is-a.dev
+- 个人主页：https://lucianaib2004.github.io
 - GitHub：https://github.com/LucianaiB2004
 - CSDN：https://blog.csdn.net/lwcwam
 - 腾讯云开发者社区：https://cloud.tencent.com/developer/user/11328216
@@ -34,7 +34,7 @@
 
 ## 网站技术说明
 
-纯静态网站（HTML + CSS + 少量原生 JS），无构建步骤，部署在 Vercel。
+纯静态网站（HTML + CSS + 少量原生 JS），无构建步骤，部署在 GitHub Pages（仓库 LucianaiB2004.github.io 的 main 分支）。
 
 - 所有正文直接写在 `index.html` 中，不依赖 JavaScript 渲染，便于搜索引擎和 AI 爬虫读取
 - `<head>` 内含 JSON-LD 结构化数据：Person、ProfilePage、FAQPage、项目与文章列表

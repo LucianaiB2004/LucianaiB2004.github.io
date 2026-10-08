@@ -40,7 +40,7 @@
 
 ## 平台主页
 
-- 个人网站：https://lucianaib.is-a.dev/
+- 个人网站：https://lucianaib2004.github.io/
 - GitHub：https://github.com/LucianaiB2004
 - CSDN：https://blog.csdn.net/lwcwam
 - 腾讯云开发者社区：https://cloud.tencent.com/developer/user/11328216

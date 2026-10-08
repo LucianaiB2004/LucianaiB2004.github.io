@@ -5,9 +5,9 @@ type: software
 authors:
   - alias: "LucianaiB"
     email: "LucianaiB0318@163.com"
-    website: "https://lucianaib.is-a.dev"
-url: "https://lucianaib.is-a.dev"
-repository-code: "https://github.com/LucianaiB2004/lucianaib-site"
+    website: "https://lucianaib2004.github.io"
+url: "https://lucianaib2004.github.io"
+repository-code: "https://github.com/LucianaiB2004/LucianaiB2004.github.io"
 abstract: "LucianaiB 是一名专注于 AI 应用落地与 AI App 设计开发的开发者和技术博主。本仓库是其个人主页源码，包含项目案例、文章与联系方式。"
 keywords:
   - LucianaiB

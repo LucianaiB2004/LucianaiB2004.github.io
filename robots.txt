@@ -27,4 +27,4 @@ Allow: /
 User-agent: YisouSpider
 Allow: /
 
-Sitemap: https://lucianaib.is-a.dev/sitemap.xml
+Sitemap: https://lucianaib2004.github.io/sitemap.xml
